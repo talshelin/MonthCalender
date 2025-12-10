@@ -117,3 +117,51 @@
     height: 45px;
   }
 }
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .calender {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .month {
+    height: 90px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .month h1 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+
+  .month p {
+    font-size: 12px;
+  }
+
+  .weekdays {
+    height: 40px;
+  }
+
+  .weekdays div {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+
+  .days {
+    padding: 1px;
+  }
+
+  .days div {
+    font-size: 11px;
+    margin: 1px;
+    width: calc((100% - 6px) / 7);
+    height: 40px;
+  }
+
+  .days div:hover:not(.empty) {
+    border: 1px solid #f07810;
+  }
+}
